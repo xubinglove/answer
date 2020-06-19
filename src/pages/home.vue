@@ -1,5 +1,5 @@
 <template>
-    <ul @keyup.up="changeSelect(5)">
+    <ul>
         <li v-for="(item,index) in dataList"  :key="index" @click="changeSelect(index)" :class="[setlectIndex===index?'active':'']">{{index}}</li>
     </ul>
 </template>
